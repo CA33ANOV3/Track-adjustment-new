@@ -1,0 +1,1049 @@
+{
+  "created_at": "2026-03-25 18:47:21",
+  "root": "G:\\hjh\\gudao\\hz_maskppo",
+  "config": {
+    "ENABLE_TRAIN": true,
+    "ENABLE_CROSS_EVAL": true,
+    "USE_BASE_INIT_FOR_EXPERTS": false,
+    "FREEZE_MODELS": [
+      "base",
+      "exp1"
+    ],
+    "AUTO_TRAIN_IF_MISSING": false,
+    "EVAL_MODEL_KEYS": [
+      "base",
+      "exp2",
+      "exp3"
+    ],
+    "EVAL_SET_KEYS": [
+      "exp2",
+      "exp3"
+    ],
+    "SPECIALIZATION_TARGETS": [
+      "exp2",
+      "exp3"
+    ],
+    "PROFILE": "moderate_aug",
+    "QUOTA_JITTER": 0.2,
+    "DELAY_NOISE_STD": 0.1,
+    "MAX_TIME_SHIFT_MIN": 6,
+    "COMBINE_MODE": "sum",
+    "N_DAYS_TRAIN": 60,
+    "N_DAYS_EVAL": 30,
+    "START_DATE_TRAIN": "2024-08-01",
+    "START_DATE_EVAL": "2024-11-01",
+    "DATE_GAP_DAYS": 45,
+    "TRAIN_SEEDS": [
+      42,
+      52,
+      62,
+      72,
+      82
+    ],
+    "BASE_STEPS": 1500000,
+    "EXPERT_STEPS": 1500000,
+    "EVAL_DETERMINISTIC": true,
+    "EVAL_BASE_SEED": 12345,
+    "SPECIALIZATION_MIN_IMPROVE": 0.05,
+    "MODEL_SPECS": {
+      "base": {
+        "scene_mix": "单列车短时晚点:4,混合型晚点场景:4,大面积晚点干扰:2",
+        "intensity_low": 0.95,
+        "intensity_high": 1.35,
+        "overlap_rate": 0.35,
+        "plan_seed": 101,
+        "steps": 1500000,
+        "init_from_base": false,
+        "lr_override": null
+      },
+      "exp1": {
+        "scene_mix": "单列车短时晚点:8,混合型晚点场景:2,大面积晚点干扰:0",
+        "intensity_low": 0.8,
+        "intensity_high": 1.1,
+        "overlap_rate": 0.1,
+        "plan_seed": 201,
+        "steps": 1500000,
+        "init_from_base": false,
+        "lr_override": null
+      },
+      "exp2": {
+        "scene_mix": "单列车短时晚点:4,混合型晚点场景:5,大面积晚点干扰:1",
+        "intensity_low": 0.9,
+        "intensity_high": 1.2,
+        "overlap_rate": 0.2,
+        "plan_seed": 301,
+        "steps": 1500000,
+        "init_from_base": false,
+        "lr_override": 0.0002
+      },
+      "exp3": {
+        "scene_mix": "单列车短时晚点:2,混合型晚点场景:3,大面积晚点干扰:5",
+        "intensity_low": 1.15,
+        "intensity_high": 1.7,
+        "overlap_rate": 0.45,
+        "plan_seed": 401,
+        "steps": 1500000,
+        "init_from_base": true,
+        "lr_override": 0.0001
+      }
+    },
+    "CFG_learning_rate": 0.0002,
+    "CFG_n_steps": 2048,
+    "CFG_batch_size": 256,
+    "CFG_ent_coef": null,
+    "CFG_clip_range": null,
+    "CFG_action_mode": "by_track",
+    "CFG_max_actions": 14,
+    "CFG_assign_tracks_n": 14
+  },
+  "models": {
+    "base": {
+      "scene_mix": "单列车短时晚点:4,混合型晚点场景:4,大面积晚点干扰:2",
+      "intensity_low": 0.95,
+      "intensity_high": 1.35,
+      "overlap_rate": 0.35,
+      "steps": 1500000,
+      "init_from_base": false,
+      "lr_override": null,
+      "train": {
+        "plan_json": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\plans\\base\\plan_base_train.json",
+        "injected_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\base\\injected_base_train.pkl",
+        "manifest_xlsx": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\base\\manifest_base_train.xlsx",
+        "data_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\base\\data_pack_base_train.pkl",
+        "convert_stats": {
+          "days": 60,
+          "trains_per_day": 316,
+          "avg_delayed_ratio_ge_60s": 0.16123417721518987
+        },
+        "manifest_stats": {
+          "scene_type_counts": {
+            "混合型晚点场景": 242,
+            "单列车短时晚点": 240,
+            "大面积晚点干扰": 120
+          },
+          "single_events_dist": {
+            "1": 14,
+            "2": 90,
+            "3": 136
+          },
+          "single_1_3_ratio": 1.0
+        }
+      },
+      "eval": {
+        "plan_json": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\plans\\base\\plan_base_eval.json",
+        "injected_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\base\\injected_base_eval.pkl",
+        "manifest_xlsx": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\base\\manifest_base_eval.xlsx",
+        "data_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\base\\data_pack_base_eval.pkl",
+        "convert_stats": {
+          "days": 30,
+          "trains_per_day": 316,
+          "avg_delayed_ratio_ge_60s": 0.1571729957805907
+        },
+        "manifest_stats": {
+          "scene_type_counts": {
+            "混合型晚点场景": 119,
+            "单列车短时晚点": 118,
+            "大面积晚点干扰": 60
+          },
+          "single_events_dist": {
+            "1": 10,
+            "2": 37,
+            "3": 71
+          },
+          "single_1_3_ratio": 1.0
+        }
+      }
+    },
+    "exp1": {
+      "scene_mix": "单列车短时晚点:8,混合型晚点场景:2,大面积晚点干扰:0",
+      "intensity_low": 0.8,
+      "intensity_high": 1.1,
+      "overlap_rate": 0.1,
+      "steps": 1500000,
+      "init_from_base": false,
+      "lr_override": null,
+      "train": {
+        "plan_json": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\plans\\exp1\\plan_exp1_train.json",
+        "injected_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\exp1\\injected_exp1_train.pkl",
+        "manifest_xlsx": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\exp1\\manifest_exp1_train.xlsx",
+        "data_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp1\\data_pack_exp1_train.pkl",
+        "convert_stats": {
+          "days": 60,
+          "trains_per_day": 316,
+          "avg_delayed_ratio_ge_60s": 0.09699367088607595
+        },
+        "manifest_stats": {
+          "scene_type_counts": {
+            "单列车短时晚点": 476,
+            "混合型晚点场景": 120
+          },
+          "single_events_dist": {
+            "1": 24,
+            "2": 195,
+            "3": 257
+          },
+          "single_1_3_ratio": 1.0
+        }
+      },
+      "eval": {
+        "plan_json": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\plans\\exp1\\plan_exp1_eval.json",
+        "injected_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\exp1\\injected_exp1_eval.pkl",
+        "manifest_xlsx": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\exp1\\manifest_exp1_eval.xlsx",
+        "data_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp1\\data_pack_exp1_eval.pkl",
+        "convert_stats": {
+          "days": 30,
+          "trains_per_day": 316,
+          "avg_delayed_ratio_ge_60s": 0.09810126582278482
+        },
+        "manifest_stats": {
+          "scene_type_counts": {
+            "单列车短时晚点": 243,
+            "混合型晚点场景": 60
+          },
+          "single_events_dist": {
+            "1": 14,
+            "2": 90,
+            "3": 139
+          },
+          "single_1_3_ratio": 1.0
+        }
+      }
+    },
+    "exp2": {
+      "scene_mix": "单列车短时晚点:4,混合型晚点场景:5,大面积晚点干扰:1",
+      "intensity_low": 0.9,
+      "intensity_high": 1.2,
+      "overlap_rate": 0.2,
+      "steps": 1500000,
+      "init_from_base": false,
+      "lr_override": 0.0002,
+      "train": {
+        "plan_json": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\plans\\exp2\\plan_exp2_train.json",
+        "injected_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\exp2\\injected_exp2_train.pkl",
+        "manifest_xlsx": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\exp2\\manifest_exp2_train.xlsx",
+        "data_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp2\\data_pack_exp2_train.pkl",
+        "convert_stats": {
+          "days": 60,
+          "trains_per_day": 316,
+          "avg_delayed_ratio_ge_60s": 0.14731012658227846
+        },
+        "manifest_stats": {
+          "scene_type_counts": {
+            "混合型晚点场景": 303,
+            "单列车短时晚点": 239,
+            "大面积晚点干扰": 60
+          },
+          "single_events_dist": {
+            "1": 17,
+            "2": 110,
+            "3": 112
+          },
+          "single_1_3_ratio": 1.0
+        }
+      },
+      "eval": {
+        "plan_json": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\plans\\exp2\\plan_exp2_eval.json",
+        "injected_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\exp2\\injected_exp2_eval.pkl",
+        "manifest_xlsx": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\exp2\\manifest_exp2_eval.xlsx",
+        "data_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp2\\data_pack_exp2_eval.pkl",
+        "convert_stats": {
+          "days": 30,
+          "trains_per_day": 316,
+          "avg_delayed_ratio_ge_60s": 0.14820675105485226
+        },
+        "manifest_stats": {
+          "scene_type_counts": {
+            "混合型晚点场景": 152,
+            "单列车短时晚点": 115,
+            "大面积晚点干扰": 30
+          },
+          "single_events_dist": {
+            "1": 6,
+            "2": 41,
+            "3": 68
+          },
+          "single_1_3_ratio": 1.0
+        }
+      }
+    },
+    "exp3": {
+      "scene_mix": "单列车短时晚点:2,混合型晚点场景:3,大面积晚点干扰:5",
+      "intensity_low": 1.15,
+      "intensity_high": 1.7,
+      "overlap_rate": 0.45,
+      "steps": 1500000,
+      "init_from_base": true,
+      "lr_override": 0.0001,
+      "train": {
+        "plan_json": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\plans\\exp3\\plan_exp3_train.json",
+        "injected_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\exp3\\injected_exp3_train.pkl",
+        "manifest_xlsx": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\exp3\\manifest_exp3_train.xlsx",
+        "data_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp3\\data_pack_exp3_train.pkl",
+        "convert_stats": {
+          "days": 60,
+          "trains_per_day": 316,
+          "avg_delayed_ratio_ge_60s": 0.1885021097046414
+        },
+        "manifest_stats": {
+          "scene_type_counts": {
+            "大面积晚点干扰": 301,
+            "混合型晚点场景": 181,
+            "单列车短时晚点": 120
+          },
+          "single_events_dist": {
+            "1": 9,
+            "2": 43,
+            "3": 68
+          },
+          "single_1_3_ratio": 1.0
+        }
+      },
+      "eval": {
+        "plan_json": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\plans\\exp3\\plan_exp3_eval.json",
+        "injected_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\exp3\\injected_exp3_eval.pkl",
+        "manifest_xlsx": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\injected\\exp3\\manifest_exp3_eval.xlsx",
+        "data_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp3\\data_pack_exp3_eval.pkl",
+        "convert_stats": {
+          "days": 30,
+          "trains_per_day": 316,
+          "avg_delayed_ratio_ge_60s": 0.20284810126582278
+        },
+        "manifest_stats": {
+          "scene_type_counts": {
+            "大面积晚点干扰": 154,
+            "混合型晚点场景": 91,
+            "单列车短时晚点": 60
+          },
+          "single_events_dist": {
+            "1": 1,
+            "2": 23,
+            "3": 36
+          },
+          "single_1_3_ratio": 1.0
+        }
+      }
+    }
+  },
+  "training": {
+    "base": {
+      "steps": 1500000,
+      "seeds": {
+        "42": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\base\\base_s42.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\base\\data_pack_base_train.pkl",
+          "init_zip": null,
+          "lr_override": null,
+          "reused": true,
+          "elapsed_sec": 0.0
+        },
+        "52": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\base\\base_s52.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\base\\data_pack_base_train.pkl",
+          "init_zip": null,
+          "lr_override": null,
+          "reused": true,
+          "elapsed_sec": 0.0
+        },
+        "62": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\base\\base_s62.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\base\\data_pack_base_train.pkl",
+          "init_zip": null,
+          "lr_override": null,
+          "reused": true,
+          "elapsed_sec": 0.0
+        },
+        "72": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\base\\base_s72.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\base\\data_pack_base_train.pkl",
+          "init_zip": null,
+          "lr_override": null,
+          "reused": true,
+          "elapsed_sec": 0.0
+        },
+        "82": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\base\\base_s82.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\base\\data_pack_base_train.pkl",
+          "init_zip": null,
+          "lr_override": null,
+          "reused": true,
+          "elapsed_sec": 0.0
+        }
+      }
+    },
+    "exp1": {
+      "steps": 1500000,
+      "seeds": {
+        "42": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp1\\exp1_s42.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp1\\data_pack_exp1_train.pkl",
+          "init_zip": null,
+          "lr_override": null,
+          "reused": true,
+          "elapsed_sec": 0.0
+        },
+        "52": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp1\\exp1_s52.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp1\\data_pack_exp1_train.pkl",
+          "init_zip": null,
+          "lr_override": null,
+          "reused": true,
+          "elapsed_sec": 0.0
+        },
+        "62": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp1\\exp1_s62.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp1\\data_pack_exp1_train.pkl",
+          "init_zip": null,
+          "lr_override": null,
+          "reused": true,
+          "elapsed_sec": 0.0
+        },
+        "72": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp1\\exp1_s72.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp1\\data_pack_exp1_train.pkl",
+          "init_zip": null,
+          "lr_override": null,
+          "reused": true,
+          "elapsed_sec": 0.0
+        },
+        "82": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp1\\exp1_s82.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp1\\data_pack_exp1_train.pkl",
+          "init_zip": null,
+          "lr_override": null,
+          "reused": true,
+          "elapsed_sec": 0.0
+        }
+      }
+    },
+    "exp2": {
+      "steps": 1500000,
+      "seeds": {
+        "42": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp2\\exp2_s42.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp2\\data_pack_exp2_train.pkl",
+          "init_zip": null,
+          "lr_override": 0.0002,
+          "reused": false,
+          "elapsed_sec": 18858.963
+        },
+        "52": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp2\\exp2_s52.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp2\\data_pack_exp2_train.pkl",
+          "init_zip": null,
+          "lr_override": 0.0002,
+          "reused": false,
+          "elapsed_sec": 18293.894
+        },
+        "62": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp2\\exp2_s62.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp2\\data_pack_exp2_train.pkl",
+          "init_zip": null,
+          "lr_override": 0.0002,
+          "reused": false,
+          "elapsed_sec": 18199.095
+        },
+        "72": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp2\\exp2_s72.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp2\\data_pack_exp2_train.pkl",
+          "init_zip": null,
+          "lr_override": 0.0002,
+          "reused": false,
+          "elapsed_sec": 16330.556
+        },
+        "82": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp2\\exp2_s82.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp2\\data_pack_exp2_train.pkl",
+          "init_zip": null,
+          "lr_override": 0.0002,
+          "reused": false,
+          "elapsed_sec": 15884.912
+        }
+      }
+    },
+    "exp3": {
+      "steps": 1500000,
+      "seeds": {
+        "42": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp3\\exp3_s42.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp3\\data_pack_exp3_train.pkl",
+          "init_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\base\\base_s42.zip",
+          "lr_override": 0.0001,
+          "reused": false,
+          "elapsed_sec": 15888.481
+        },
+        "52": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp3\\exp3_s52.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp3\\data_pack_exp3_train.pkl",
+          "init_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\base\\base_s52.zip",
+          "lr_override": 0.0001,
+          "reused": false,
+          "elapsed_sec": 15844.856
+        },
+        "62": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp3\\exp3_s62.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp3\\data_pack_exp3_train.pkl",
+          "init_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\base\\base_s62.zip",
+          "lr_override": 0.0001,
+          "reused": false,
+          "elapsed_sec": 15937.046
+        },
+        "72": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp3\\exp3_s72.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp3\\data_pack_exp3_train.pkl",
+          "init_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\base\\base_s72.zip",
+          "lr_override": 0.0001,
+          "reused": false,
+          "elapsed_sec": 15946.648
+        },
+        "82": {
+          "ok": true,
+          "error": "",
+          "model_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\exp3\\exp3_s82.zip",
+          "train_pack": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\rlpacks\\exp3\\data_pack_exp3_train.pkl",
+          "init_zip": "G:\\hjh\\gudao\\hz_maskppo\\artifacts\\four_models\\checkpoints\\base\\base_s82.zip",
+          "lr_override": 0.0001,
+          "reused": false,
+          "elapsed_sec": 16463.913
+        }
+      }
+    }
+  },
+  "cross_eval_detail": [
+    {
+      "model": "base",
+      "train_seed": 42,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 193749.7,
+      "avg_sum_dep_delay_min": 3229.161666666667,
+      "std_sum_dep_delay_min": 358.795435163355,
+      "avg_train_dep_delay_sec": 613.1319620253166,
+      "avg_episode_reward": -3064.401666666659,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 11.066666666666666
+    },
+    {
+      "model": "base",
+      "train_seed": 52,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 391206.7,
+      "avg_sum_dep_delay_min": 6520.111666666666,
+      "std_sum_dep_delay_min": 1043.6309577160198,
+      "avg_train_dep_delay_sec": 1237.9958860759496,
+      "avg_episode_reward": -6358.093666666663,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 10.5
+    },
+    {
+      "model": "base",
+      "train_seed": 62,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 357594.3,
+      "avg_sum_dep_delay_min": 5959.905000000002,
+      "std_sum_dep_delay_min": 1726.2628990318233,
+      "avg_train_dep_delay_sec": 1131.6275316455697,
+      "avg_episode_reward": -5797.256999999997,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 6.666666666666667
+    },
+    {
+      "model": "base",
+      "train_seed": 72,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 621216.0666666667,
+      "avg_sum_dep_delay_min": 10353.601111111113,
+      "std_sum_dep_delay_min": 624.988048298497,
+      "avg_train_dep_delay_sec": 1965.8736286919834,
+      "avg_episode_reward": -10194.027777777768,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 9.566666666666666
+    },
+    {
+      "model": "base",
+      "train_seed": 82,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 753418.0666666667,
+      "avg_sum_dep_delay_min": 12556.96777777778,
+      "std_sum_dep_delay_min": 1261.9349422326973,
+      "avg_train_dep_delay_sec": 2384.2343881856536,
+      "avg_episode_reward": -12396.197111111103,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 9.866666666666667
+    },
+    {
+      "model": "base",
+      "train_seed": 42,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 276210.5333333333,
+      "avg_sum_dep_delay_min": 4603.508888888889,
+      "std_sum_dep_delay_min": 739.3909559638764,
+      "avg_train_dep_delay_sec": 874.0839662447256,
+      "avg_episode_reward": -4435.9195555555525,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 10.2
+    },
+    {
+      "model": "base",
+      "train_seed": 52,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 304560.63333333336,
+      "avg_sum_dep_delay_min": 5076.010555555556,
+      "std_sum_dep_delay_min": 692.1306130678354,
+      "avg_train_dep_delay_sec": 963.7994725738397,
+      "avg_episode_reward": -4911.373222222216,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 9.933333333333334
+    },
+    {
+      "model": "base",
+      "train_seed": 62,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 316937.56666666665,
+      "avg_sum_dep_delay_min": 5282.292777777779,
+      "std_sum_dep_delay_min": 571.0504168595503,
+      "avg_train_dep_delay_sec": 1002.966983122363,
+      "avg_episode_reward": -5118.2154444444395,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 5.0
+    },
+    {
+      "model": "base",
+      "train_seed": 72,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 734681.8,
+      "avg_sum_dep_delay_min": 12244.696666666665,
+      "std_sum_dep_delay_min": 1598.7608663601313,
+      "avg_train_dep_delay_sec": 2324.942405063291,
+      "avg_episode_reward": -12082.051999999994,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 8.966666666666667
+    },
+    {
+      "model": "base",
+      "train_seed": 82,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 722387.6333333333,
+      "avg_sum_dep_delay_min": 12039.793888888888,
+      "std_sum_dep_delay_min": 2121.6034489027948,
+      "avg_train_dep_delay_sec": 2286.036814345992,
+      "avg_episode_reward": -11878.12588888888,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 8.5
+    },
+    {
+      "model": "exp2",
+      "train_seed": 42,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 246919.0,
+      "avg_sum_dep_delay_min": 4115.316666666667,
+      "std_sum_dep_delay_min": 314.785223471034,
+      "avg_train_dep_delay_sec": 781.3892405063291,
+      "avg_episode_reward": -3951.533333333325,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 9.033333333333333
+    },
+    {
+      "model": "exp2",
+      "train_seed": 52,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 390900.73333333334,
+      "avg_sum_dep_delay_min": 6515.012222222223,
+      "std_sum_dep_delay_min": 982.2032240489013,
+      "avg_train_dep_delay_sec": 1237.0276371308016,
+      "avg_episode_reward": -6351.2655555555575,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 9.033333333333333
+    },
+    {
+      "model": "exp2",
+      "train_seed": 62,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 309644.2,
+      "avg_sum_dep_delay_min": 5160.736666666666,
+      "std_sum_dep_delay_min": 258.2652529275509,
+      "avg_train_dep_delay_sec": 979.8867088607597,
+      "avg_episode_reward": -4996.440666666662,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 10.0
+    },
+    {
+      "model": "exp2",
+      "train_seed": 72,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 251552.73333333334,
+      "avg_sum_dep_delay_min": 4192.545555555555,
+      "std_sum_dep_delay_min": 402.6974607842649,
+      "avg_train_dep_delay_sec": 796.0529535864979,
+      "avg_episode_reward": -4030.642222222214,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 9.866666666666667
+    },
+    {
+      "model": "exp2",
+      "train_seed": 82,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 792961.4,
+      "avg_sum_dep_delay_min": 13216.023333333334,
+      "std_sum_dep_delay_min": 1831.9619128952572,
+      "avg_train_dep_delay_sec": 2509.3715189873415,
+      "avg_episode_reward": -13057.113333333318,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 7.766666666666667
+    },
+    {
+      "model": "exp2",
+      "train_seed": 42,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 280629.1,
+      "avg_sum_dep_delay_min": 4677.151666666668,
+      "std_sum_dep_delay_min": 421.6293063806668,
+      "avg_train_dep_delay_sec": 888.0667721518986,
+      "avg_episode_reward": -4511.127666666662,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 8.133333333333333
+    },
+    {
+      "model": "exp2",
+      "train_seed": 52,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 469919.13333333336,
+      "avg_sum_dep_delay_min": 7831.985555555555,
+      "std_sum_dep_delay_min": 1857.9482004332026,
+      "avg_train_dep_delay_sec": 1487.0858649789027,
+      "avg_episode_reward": -7668.492222222223,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 7.966666666666667
+    },
+    {
+      "model": "exp2",
+      "train_seed": 62,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 358952.23333333334,
+      "avg_sum_dep_delay_min": 5982.537222222222,
+      "std_sum_dep_delay_min": 527.5715380606799,
+      "avg_train_dep_delay_sec": 1135.924789029536,
+      "avg_episode_reward": -5816.4338888888915,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 10.266666666666667
+    },
+    {
+      "model": "exp2",
+      "train_seed": 72,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 299476.5,
+      "avg_sum_dep_delay_min": 4991.274999999999,
+      "std_sum_dep_delay_min": 462.42441405237867,
+      "avg_train_dep_delay_sec": 947.7104430379748,
+      "avg_episode_reward": -4826.798333333325,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 10.533333333333333
+    },
+    {
+      "model": "exp2",
+      "train_seed": 82,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 572904.7,
+      "avg_sum_dep_delay_min": 9548.411666666665,
+      "std_sum_dep_delay_min": 3151.35916522082,
+      "avg_train_dep_delay_sec": 1812.9895569620253,
+      "avg_episode_reward": -9387.700999999995,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 6.4
+    },
+    {
+      "model": "exp3",
+      "train_seed": 42,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 364385.93333333335,
+      "avg_sum_dep_delay_min": 6073.098888888889,
+      "std_sum_dep_delay_min": 1100.0769144995338,
+      "avg_train_dep_delay_sec": 1153.1200421940928,
+      "avg_episode_reward": -5906.387555555562,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 12.4
+    },
+    {
+      "model": "exp3",
+      "train_seed": 52,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 291421.1666666667,
+      "avg_sum_dep_delay_min": 4857.019444444445,
+      "std_sum_dep_delay_min": 733.2501104564219,
+      "avg_train_dep_delay_sec": 922.2188818565402,
+      "avg_episode_reward": -4693.986777777772,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 9.833333333333334
+    },
+    {
+      "model": "exp3",
+      "train_seed": 62,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 844811.5666666667,
+      "avg_sum_dep_delay_min": 14080.192777777782,
+      "std_sum_dep_delay_min": 253.9875987893132,
+      "avg_train_dep_delay_sec": 2673.4543248945142,
+      "avg_episode_reward": -13920.44277777777,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 7.0
+    },
+    {
+      "model": "exp3",
+      "train_seed": 72,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 422039.13333333336,
+      "avg_sum_dep_delay_min": 7033.985555555554,
+      "std_sum_dep_delay_min": 1117.2183874958719,
+      "avg_train_dep_delay_sec": 1335.5668776371308,
+      "avg_episode_reward": -6872.534222222215,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 10.766666666666667
+    },
+    {
+      "model": "exp3",
+      "train_seed": 82,
+      "eval_set": "exp2",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 759235.1333333333,
+      "avg_sum_dep_delay_min": 12653.918888888891,
+      "std_sum_dep_delay_min": 1189.3040254521031,
+      "avg_train_dep_delay_sec": 2402.642827004219,
+      "avg_episode_reward": -12491.766222222217,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 10.966666666666667
+    },
+    {
+      "model": "exp3",
+      "train_seed": 42,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 257805.53333333333,
+      "avg_sum_dep_delay_min": 4296.758888888889,
+      "std_sum_dep_delay_min": 441.30514446501735,
+      "avg_train_dep_delay_sec": 815.8402953586498,
+      "avg_episode_reward": -4128.779555555551,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 12.733333333333333
+    },
+    {
+      "model": "exp3",
+      "train_seed": 52,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 253543.6,
+      "avg_sum_dep_delay_min": 4225.726666666667,
+      "std_sum_dep_delay_min": 601.4961653151987,
+      "avg_train_dep_delay_sec": 802.3531645569622,
+      "avg_episode_reward": -4058.184666666662,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 10.666666666666666
+    },
+    {
+      "model": "exp3",
+      "train_seed": 62,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 897937.3,
+      "avg_sum_dep_delay_min": 14965.621666666668,
+      "std_sum_dep_delay_min": 956.158432804712,
+      "avg_train_dep_delay_sec": 2841.5737341772156,
+      "avg_episode_reward": -14805.718999999992,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 6.0
+    },
+    {
+      "model": "exp3",
+      "train_seed": 72,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 332273.56666666665,
+      "avg_sum_dep_delay_min": 5537.892777777776,
+      "std_sum_dep_delay_min": 1155.3667477366407,
+      "avg_train_dep_delay_sec": 1051.4986286919832,
+      "avg_episode_reward": -5371.5054444444395,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 11.0
+    },
+    {
+      "model": "exp3",
+      "train_seed": 82,
+      "eval_set": "exp3",
+      "days": 30,
+      "avg_sum_dep_delay_sec": 754308.2333333333,
+      "avg_sum_dep_delay_min": 12571.803888888888,
+      "std_sum_dep_delay_min": 2013.4565987170681,
+      "avg_train_dep_delay_sec": 2387.0513713080168,
+      "avg_episode_reward": -12411.019222222212,
+      "avg_feasible_actions": 13.708860759493673,
+      "avg_nontrivial_ratio": 1.0,
+      "avg_unique_actions_used": 8.1
+    }
+  ],
+  "cross_eval_stats": [
+    {
+      "model": "base",
+      "eval_set": "exp2",
+      "n": 5,
+      "mean": 7723.949444444445,
+      "std": 3709.357406033411,
+      "ci95_low": 4979.649,
+      "ci95_high": 10691.406555555557
+    },
+    {
+      "model": "base",
+      "eval_set": "exp3",
+      "n": 5,
+      "mean": 7849.260555555555,
+      "std": 3927.3264201284615,
+      "ci95_low": 4928.266333333334,
+      "ci95_high": 10770.254777777776
+    },
+    {
+      "model": "exp2",
+      "eval_set": "exp2",
+      "n": 5,
+      "mean": 6639.926888888888,
+      "std": 3801.709615390112,
+      "ci95_low": 4355.292222222221,
+      "ci95_high": 10055.679777777777
+    },
+    {
+      "model": "exp2",
+      "eval_set": "exp3",
+      "n": 5,
+      "mean": 6606.272222222222,
+      "std": 2054.101091837037,
+      "ci95_low": 5063.878111111111,
+      "ci95_high": 8230.874444444444
+    },
+    {
+      "model": "exp3",
+      "eval_set": "exp2",
+      "n": 5,
+      "mean": 8939.643111111112,
+      "std": 4145.40462227398,
+      "ci95_low": 5778.844444444445,
+      "ci95_high": 12193.519222222225
+    },
+    {
+      "model": "exp3",
+      "eval_set": "exp3",
+      "n": 5,
+      "mean": 8319.560777777777,
+      "std": 5072.765183890819,
+      "ci95_low": 4516.572777777777,
+      "ci95_high": 12601.312333333331
+    }
+  ],
+  "specialization_check": [
+    {
+      "dataset": "exp2",
+      "n_pairs": 5,
+      "improve_mean": 0.08060581077863163,
+      "improve_std": 0.32313237824415014,
+      "ci95_low": -0.14833246370206293,
+      "ci95_high": 0.35735125929188616,
+      "positive_seed_ratio": 0.6,
+      "pass": false
+    },
+    {
+      "dataset": "exp3",
+      "n_pairs": 5,
+      "improve_mean": -0.21909597257454694,
+      "improve_std": 0.9293748947826816,
+      "ci95_low": -1.0328965566986366,
+      "ci95_high": 0.35330331992253095,
+      "positive_seed_ratio": 0.6,
+      "pass": false
+    }
+  ]
+}

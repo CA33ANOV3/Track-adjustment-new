@@ -1,0 +1,2036 @@
+{
+  "2023-07-01": [
+    {
+      "scenario_id": "2023-07-01_S001",
+      "start_sec": 31873,
+      "end_sec": 32077,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S002",
+      "start_sec": 34465,
+      "end_sec": 34717,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S003",
+      "start_sec": 35787,
+      "end_sec": 35787,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S004",
+      "start_sec": 37524,
+      "end_sec": 38019,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S005",
+      "start_sec": 39062,
+      "end_sec": 40405,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-01_S006",
+      "start_sec": 41363,
+      "end_sec": 42045,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S007",
+      "start_sec": 48781,
+      "end_sec": 49271,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S008",
+      "start_sec": 53540,
+      "end_sec": 53540,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S009",
+      "start_sec": 57008,
+      "end_sec": 57182,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S010",
+      "start_sec": 60176,
+      "end_sec": 60176,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S011",
+      "start_sec": 61563,
+      "end_sec": 61563,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S012",
+      "start_sec": 63081,
+      "end_sec": 63081,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S013",
+      "start_sec": 65093,
+      "end_sec": 65994,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S014",
+      "start_sec": 67721,
+      "end_sec": 69309,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-01_S015",
+      "start_sec": 70448,
+      "end_sec": 74731,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-01_S016",
+      "start_sec": 77080,
+      "end_sec": 78198,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-01_S017",
+      "start_sec": 80472,
+      "end_sec": 81318,
+      "scene_type": "混合型晚点场景"
+    }
+  ],
+  "2023-07-02": [
+    {
+      "scenario_id": "2023-07-02_S001",
+      "start_sec": 34462,
+      "end_sec": 34690,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-02_S002",
+      "start_sec": 36638,
+      "end_sec": 36638,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-02_S003",
+      "start_sec": 37619,
+      "end_sec": 38433,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-02_S004",
+      "start_sec": 45063,
+      "end_sec": 45063,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-02_S005",
+      "start_sec": 52385,
+      "end_sec": 55701,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-02_S006",
+      "start_sec": 57382,
+      "end_sec": 57382,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-02_S007",
+      "start_sec": 59710,
+      "end_sec": 61503,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-02_S008",
+      "start_sec": 63134,
+      "end_sec": 65953,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-02_S009",
+      "start_sec": 66953,
+      "end_sec": 67313,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-02_S010",
+      "start_sec": 68242,
+      "end_sec": 71752,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-02_S011",
+      "start_sec": 72724,
+      "end_sec": 74335,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-02_S012",
+      "start_sec": 76151,
+      "end_sec": 76151,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-02_S013",
+      "start_sec": 77963,
+      "end_sec": 79240,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-02_S014",
+      "start_sec": 80263,
+      "end_sec": 80484,
+      "scene_type": "单列车短时晚点"
+    }
+  ],
+  "2023-07-03": [
+    {
+      "scenario_id": "2023-07-03_S001",
+      "start_sec": 28744,
+      "end_sec": 28744,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-03_S002",
+      "start_sec": 34393,
+      "end_sec": 34393,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-03_S003",
+      "start_sec": 37720,
+      "end_sec": 38438,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-03_S004",
+      "start_sec": 44546,
+      "end_sec": 47012,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-03_S005",
+      "start_sec": 48662,
+      "end_sec": 48662,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-03_S006",
+      "start_sec": 53439,
+      "end_sec": 53439,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-03_S007",
+      "start_sec": 58928,
+      "end_sec": 58928,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-03_S008",
+      "start_sec": 61446,
+      "end_sec": 61446,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-03_S009",
+      "start_sec": 62831,
+      "end_sec": 63901,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-03_S010",
+      "start_sec": 66067,
+      "end_sec": 66885,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-03_S011",
+      "start_sec": 69548,
+      "end_sec": 70510,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-03_S012",
+      "start_sec": 72503,
+      "end_sec": 74929,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-03_S013",
+      "start_sec": 78124,
+      "end_sec": 79263,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-03_S014",
+      "start_sec": 80380,
+      "end_sec": 81267,
+      "scene_type": "大面积晚点干扰"
+    }
+  ],
+  "2023-07-04": [
+    {
+      "scenario_id": "2023-07-04_S001",
+      "start_sec": 37613,
+      "end_sec": 37613,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-04_S002",
+      "start_sec": 48744,
+      "end_sec": 49266,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-04_S003",
+      "start_sec": 53266,
+      "end_sec": 53695,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-04_S004",
+      "start_sec": 61059,
+      "end_sec": 61700,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-04_S005",
+      "start_sec": 65008,
+      "end_sec": 65008,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-04_S006",
+      "start_sec": 68870,
+      "end_sec": 72666,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-04_S007",
+      "start_sec": 79200,
+      "end_sec": 79200,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-04_S008",
+      "start_sec": 80728,
+      "end_sec": 80728,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-04_S009",
+      "start_sec": 82036,
+      "end_sec": 82036,
+      "scene_type": "混合型晚点场景"
+    }
+  ],
+  "2023-07-05": [
+    {
+      "scenario_id": "2023-07-05_S001",
+      "start_sec": 31519,
+      "end_sec": 31519,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-05_S002",
+      "start_sec": 36776,
+      "end_sec": 39258,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-05_S003",
+      "start_sec": 41651,
+      "end_sec": 41651,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-05_S004",
+      "start_sec": 48691,
+      "end_sec": 48691,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-05_S005",
+      "start_sec": 53466,
+      "end_sec": 53466,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-05_S006",
+      "start_sec": 58578,
+      "end_sec": 59302,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-05_S007",
+      "start_sec": 67840,
+      "end_sec": 68245,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-05_S008",
+      "start_sec": 70196,
+      "end_sec": 70451,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-05_S009",
+      "start_sec": 71485,
+      "end_sec": 71777,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-05_S010",
+      "start_sec": 72723,
+      "end_sec": 73944,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-05_S011",
+      "start_sec": 75174,
+      "end_sec": 75725,
+      "scene_type": "混合型晚点场景"
+    }
+  ],
+  "2023-07-06": [
+    {
+      "scenario_id": "2023-07-06_S001",
+      "start_sec": 34737,
+      "end_sec": 34737,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-06_S002",
+      "start_sec": 36603,
+      "end_sec": 36603,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-06_S003",
+      "start_sec": 37567,
+      "end_sec": 37567,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-06_S004",
+      "start_sec": 38705,
+      "end_sec": 38930,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-06_S005",
+      "start_sec": 40203,
+      "end_sec": 41076,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-06_S006",
+      "start_sec": 45407,
+      "end_sec": 46126,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-06_S007",
+      "start_sec": 48744,
+      "end_sec": 48744,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-06_S008",
+      "start_sec": 61450,
+      "end_sec": 61450,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-06_S009",
+      "start_sec": 65126,
+      "end_sec": 65310,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-06_S010",
+      "start_sec": 67027,
+      "end_sec": 67543,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-06_S011",
+      "start_sec": 69131,
+      "end_sec": 72201,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-06_S012",
+      "start_sec": 73928,
+      "end_sec": 73928,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-06_S013",
+      "start_sec": 76022,
+      "end_sec": 76022,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-06_S014",
+      "start_sec": 76954,
+      "end_sec": 76954,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-06_S015",
+      "start_sec": 78666,
+      "end_sec": 78666,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-06_S016",
+      "start_sec": 80182,
+      "end_sec": 81396,
+      "scene_type": "混合型晚点场景"
+    }
+  ],
+  "2023-07-07": [
+    {
+      "scenario_id": "2023-07-07_S001",
+      "start_sec": 27966,
+      "end_sec": 27966,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-07_S002",
+      "start_sec": 34459,
+      "end_sec": 34691,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-07_S003",
+      "start_sec": 36639,
+      "end_sec": 36639,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-07_S004",
+      "start_sec": 39223,
+      "end_sec": 39509,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-07_S005",
+      "start_sec": 43237,
+      "end_sec": 43443,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-07_S006",
+      "start_sec": 54881,
+      "end_sec": 54881,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-07_S007",
+      "start_sec": 57497,
+      "end_sec": 57497,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-07_S008",
+      "start_sec": 58614,
+      "end_sec": 59962,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-07_S009",
+      "start_sec": 62249,
+      "end_sec": 62249,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-07_S010",
+      "start_sec": 65039,
+      "end_sec": 70774,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-07_S011",
+      "start_sec": 73170,
+      "end_sec": 73750,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-07_S012",
+      "start_sec": 76742,
+      "end_sec": 78139,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-07_S013",
+      "start_sec": 80970,
+      "end_sec": 81246,
+      "scene_type": "单列车短时晚点"
+    }
+  ],
+  "2023-07-08": [
+    {
+      "scenario_id": "2023-07-08_S001",
+      "start_sec": 29052,
+      "end_sec": 29052,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-08_S002",
+      "start_sec": 31798,
+      "end_sec": 31798,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-08_S003",
+      "start_sec": 37769,
+      "end_sec": 37959,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-08_S004",
+      "start_sec": 39230,
+      "end_sec": 39230,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-08_S005",
+      "start_sec": 41390,
+      "end_sec": 42161,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-08_S006",
+      "start_sec": 48718,
+      "end_sec": 48960,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-08_S007",
+      "start_sec": 59884,
+      "end_sec": 59884,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-08_S008",
+      "start_sec": 61504,
+      "end_sec": 61504,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-08_S009",
+      "start_sec": 66863,
+      "end_sec": 66863,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-08_S010",
+      "start_sec": 69244,
+      "end_sec": 69244,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-08_S011",
+      "start_sec": 70453,
+      "end_sec": 73975,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-08_S012",
+      "start_sec": 78952,
+      "end_sec": 79518,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-08_S013",
+      "start_sec": 80531,
+      "end_sec": 80942,
+      "scene_type": "单列车短时晚点"
+    }
+  ],
+  "2023-07-09": [
+    {
+      "scenario_id": "2023-07-09_S001",
+      "start_sec": 28663,
+      "end_sec": 28663,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-09_S002",
+      "start_sec": 37670,
+      "end_sec": 39511,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-09_S003",
+      "start_sec": 41787,
+      "end_sec": 42030,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-09_S004",
+      "start_sec": 45058,
+      "end_sec": 45058,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-09_S005",
+      "start_sec": 46125,
+      "end_sec": 46125,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-09_S006",
+      "start_sec": 56293,
+      "end_sec": 56293,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-09_S007",
+      "start_sec": 66035,
+      "end_sec": 67614,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-09_S008",
+      "start_sec": 68689,
+      "end_sec": 69351,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-09_S009",
+      "start_sec": 70501,
+      "end_sec": 70736,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-09_S010",
+      "start_sec": 73612,
+      "end_sec": 73817,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-09_S011",
+      "start_sec": 77554,
+      "end_sec": 78285,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-09_S012",
+      "start_sec": 80747,
+      "end_sec": 80945,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-09_S013",
+      "start_sec": 82280,
+      "end_sec": 82280,
+      "scene_type": "混合型晚点场景"
+    }
+  ],
+  "2023-07-10": [
+    {
+      "scenario_id": "2023-07-10_S001",
+      "start_sec": 34498,
+      "end_sec": 34720,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-10_S002",
+      "start_sec": 37503,
+      "end_sec": 37503,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-10_S003",
+      "start_sec": 38726,
+      "end_sec": 40123,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-10_S004",
+      "start_sec": 42114,
+      "end_sec": 43203,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-10_S005",
+      "start_sec": 46121,
+      "end_sec": 46121,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-10_S006",
+      "start_sec": 51208,
+      "end_sec": 51208,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-10_S007",
+      "start_sec": 52908,
+      "end_sec": 59843,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-10_S008",
+      "start_sec": 60120,
+      "end_sec": 61531,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-10_S009",
+      "start_sec": 62718,
+      "end_sec": 63515,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-10_S010",
+      "start_sec": 64540,
+      "end_sec": 67865,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-10_S011",
+      "start_sec": 70835,
+      "end_sec": 73990,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-10_S012",
+      "start_sec": 75135,
+      "end_sec": 78903,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-10_S013",
+      "start_sec": 82314,
+      "end_sec": 82516,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-10_S014",
+      "start_sec": 84022,
+      "end_sec": 84022,
+      "scene_type": "单列车短时晚点"
+    }
+  ],
+  "2023-07-11": [
+    {
+      "scenario_id": "2023-07-11_S001",
+      "start_sec": 25196,
+      "end_sec": 25578,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-11_S002",
+      "start_sec": 28665,
+      "end_sec": 28665,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-11_S003",
+      "start_sec": 31370,
+      "end_sec": 32053,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-11_S004",
+      "start_sec": 34386,
+      "end_sec": 34440,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-11_S005",
+      "start_sec": 36693,
+      "end_sec": 38400,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-11_S006",
+      "start_sec": 40390,
+      "end_sec": 42201,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-11_S007",
+      "start_sec": 43220,
+      "end_sec": 43220,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-11_S008",
+      "start_sec": 48734,
+      "end_sec": 49268,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-11_S009",
+      "start_sec": 50675,
+      "end_sec": 50675,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-11_S010",
+      "start_sec": 60009,
+      "end_sec": 60422,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-11_S011",
+      "start_sec": 65027,
+      "end_sec": 65027,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-11_S012",
+      "start_sec": 66922,
+      "end_sec": 68006,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-11_S013",
+      "start_sec": 69034,
+      "end_sec": 69034,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-11_S014",
+      "start_sec": 70994,
+      "end_sec": 71722,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-11_S015",
+      "start_sec": 73640,
+      "end_sec": 73834,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-11_S016",
+      "start_sec": 76924,
+      "end_sec": 77448,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-11_S017",
+      "start_sec": 79946,
+      "end_sec": 81432,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-11_S018",
+      "start_sec": 83881,
+      "end_sec": 83881,
+      "scene_type": "单列车短时晚点"
+    }
+  ],
+  "2023-07-12": [
+    {
+      "scenario_id": "2023-07-12_S001",
+      "start_sec": 31816,
+      "end_sec": 31816,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-12_S002",
+      "start_sec": 38436,
+      "end_sec": 39240,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-12_S003",
+      "start_sec": 47583,
+      "end_sec": 47583,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-12_S004",
+      "start_sec": 59466,
+      "end_sec": 59957,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-12_S005",
+      "start_sec": 68742,
+      "end_sec": 69283,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-12_S006",
+      "start_sec": 70531,
+      "end_sec": 71551,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-12_S007",
+      "start_sec": 72617,
+      "end_sec": 72617,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-12_S008",
+      "start_sec": 76081,
+      "end_sec": 76081,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-12_S009",
+      "start_sec": 77042,
+      "end_sec": 77445,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-12_S010",
+      "start_sec": 78658,
+      "end_sec": 78658,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-12_S011",
+      "start_sec": 81071,
+      "end_sec": 81302,
+      "scene_type": "单列车短时晚点"
+    }
+  ],
+  "2023-07-13": [
+    {
+      "scenario_id": "2023-07-13_S001",
+      "start_sec": 34554,
+      "end_sec": 34795,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-13_S002",
+      "start_sec": 37640,
+      "end_sec": 37640,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-13_S003",
+      "start_sec": 38654,
+      "end_sec": 39283,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-13_S004",
+      "start_sec": 46484,
+      "end_sec": 47612,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-13_S005",
+      "start_sec": 48770,
+      "end_sec": 49018,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-13_S006",
+      "start_sec": 56311,
+      "end_sec": 57267,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-13_S007",
+      "start_sec": 59922,
+      "end_sec": 59922,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-13_S008",
+      "start_sec": 61668,
+      "end_sec": 62294,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-13_S009",
+      "start_sec": 70442,
+      "end_sec": 72133,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-13_S010",
+      "start_sec": 73530,
+      "end_sec": 73530,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-13_S011",
+      "start_sec": 77928,
+      "end_sec": 78931,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-13_S012",
+      "start_sec": 80788,
+      "end_sec": 81431,
+      "scene_type": "单列车短时晚点"
+    }
+  ],
+  "2023-07-14": [
+    {
+      "scenario_id": "2023-07-14_S001",
+      "start_sec": 34448,
+      "end_sec": 34470,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-14_S002",
+      "start_sec": 37606,
+      "end_sec": 39211,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-14_S003",
+      "start_sec": 40163,
+      "end_sec": 40384,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-14_S004",
+      "start_sec": 43634,
+      "end_sec": 43800,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-14_S005",
+      "start_sec": 53286,
+      "end_sec": 53468,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-14_S006",
+      "start_sec": 57039,
+      "end_sec": 57292,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-14_S007",
+      "start_sec": 59763,
+      "end_sec": 59916,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-14_S008",
+      "start_sec": 65197,
+      "end_sec": 65409,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-14_S009",
+      "start_sec": 66880,
+      "end_sec": 67532,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-14_S010",
+      "start_sec": 69024,
+      "end_sec": 69445,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-14_S011",
+      "start_sec": 70715,
+      "end_sec": 73949,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-14_S012",
+      "start_sec": 76983,
+      "end_sec": 77446,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-14_S013",
+      "start_sec": 78808,
+      "end_sec": 78808,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-14_S014",
+      "start_sec": 80732,
+      "end_sec": 81270,
+      "scene_type": "混合型晚点场景"
+    }
+  ],
+  "2023-07-15": [
+    {
+      "scenario_id": "2023-07-15_S001",
+      "start_sec": 31544,
+      "end_sec": 31750,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-15_S002",
+      "start_sec": 35717,
+      "end_sec": 36601,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-15_S003",
+      "start_sec": 38470,
+      "end_sec": 39861,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-15_S004",
+      "start_sec": 46319,
+      "end_sec": 47018,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-15_S005",
+      "start_sec": 48993,
+      "end_sec": 48993,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-15_S006",
+      "start_sec": 53005,
+      "end_sec": 53323,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-15_S007",
+      "start_sec": 55801,
+      "end_sec": 56922,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-15_S008",
+      "start_sec": 59133,
+      "end_sec": 59341,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-15_S009",
+      "start_sec": 61487,
+      "end_sec": 62353,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-15_S010",
+      "start_sec": 65233,
+      "end_sec": 65233,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-15_S011",
+      "start_sec": 70874,
+      "end_sec": 70874,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-15_S012",
+      "start_sec": 73505,
+      "end_sec": 73505,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-15_S013",
+      "start_sec": 74734,
+      "end_sec": 74734,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-15_S014",
+      "start_sec": 76920,
+      "end_sec": 78126,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-15_S015",
+      "start_sec": 81337,
+      "end_sec": 81337,
+      "scene_type": "混合型晚点场景"
+    }
+  ],
+  "2023-07-16": [
+    {
+      "scenario_id": "2023-07-16_S001",
+      "start_sec": 31748,
+      "end_sec": 31748,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-16_S002",
+      "start_sec": 36745,
+      "end_sec": 37570,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-16_S003",
+      "start_sec": 38533,
+      "end_sec": 40470,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-16_S004",
+      "start_sec": 41658,
+      "end_sec": 41704,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-16_S005",
+      "start_sec": 45004,
+      "end_sec": 46942,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-16_S006",
+      "start_sec": 48688,
+      "end_sec": 48688,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-16_S007",
+      "start_sec": 53020,
+      "end_sec": 54186,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-16_S008",
+      "start_sec": 58934,
+      "end_sec": 58934,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-16_S009",
+      "start_sec": 61244,
+      "end_sec": 62265,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-16_S010",
+      "start_sec": 66878,
+      "end_sec": 67928,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-16_S011",
+      "start_sec": 68896,
+      "end_sec": 69331,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-16_S012",
+      "start_sec": 70958,
+      "end_sec": 70958,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-16_S013",
+      "start_sec": 73890,
+      "end_sec": 80882,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-16_S014",
+      "start_sec": 81176,
+      "end_sec": 81639,
+      "scene_type": "混合型晚点场景"
+    }
+  ],
+  "2023-07-17": [
+    {
+      "scenario_id": "2023-07-17_S001",
+      "start_sec": 28694,
+      "end_sec": 28694,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-17_S002",
+      "start_sec": 34485,
+      "end_sec": 34485,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-17_S003",
+      "start_sec": 35975,
+      "end_sec": 41592,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-17_S004",
+      "start_sec": 43296,
+      "end_sec": 43768,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-17_S005",
+      "start_sec": 46499,
+      "end_sec": 47627,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-17_S006",
+      "start_sec": 48894,
+      "end_sec": 51088,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-17_S007",
+      "start_sec": 52265,
+      "end_sec": 52462,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-17_S008",
+      "start_sec": 53986,
+      "end_sec": 57968,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-17_S009",
+      "start_sec": 59607,
+      "end_sec": 62026,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-17_S010",
+      "start_sec": 63608,
+      "end_sec": 63817,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-17_S011",
+      "start_sec": 65003,
+      "end_sec": 65003,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-17_S012",
+      "start_sec": 66418,
+      "end_sec": 66418,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-17_S013",
+      "start_sec": 67446,
+      "end_sec": 74101,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-17_S014",
+      "start_sec": 74786,
+      "end_sec": 81392,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-17_S015",
+      "start_sec": 83752,
+      "end_sec": 83752,
+      "scene_type": "单列车短时晚点"
+    }
+  ],
+  "2023-07-18": [
+    {
+      "scenario_id": "2023-07-18_S001",
+      "start_sec": 31880,
+      "end_sec": 35919,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-18_S002",
+      "start_sec": 37719,
+      "end_sec": 39321,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-18_S003",
+      "start_sec": 41407,
+      "end_sec": 41407,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-18_S004",
+      "start_sec": 47587,
+      "end_sec": 47587,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-18_S005",
+      "start_sec": 48869,
+      "end_sec": 49573,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-18_S006",
+      "start_sec": 57485,
+      "end_sec": 57859,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-18_S007",
+      "start_sec": 58920,
+      "end_sec": 60026,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-18_S008",
+      "start_sec": 61138,
+      "end_sec": 62915,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-18_S009",
+      "start_sec": 64154,
+      "end_sec": 68167,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-18_S010",
+      "start_sec": 70493,
+      "end_sec": 72322,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-18_S011",
+      "start_sec": 73433,
+      "end_sec": 73631,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-18_S012",
+      "start_sec": 74533,
+      "end_sec": 77427,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-18_S013",
+      "start_sec": 79177,
+      "end_sec": 79365,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-18_S014",
+      "start_sec": 80499,
+      "end_sec": 81384,
+      "scene_type": "混合型晚点场景"
+    }
+  ],
+  "2023-07-19": [
+    {
+      "scenario_id": "2023-07-19_S001",
+      "start_sec": 31918,
+      "end_sec": 32137,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-19_S002",
+      "start_sec": 34502,
+      "end_sec": 35007,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-19_S003",
+      "start_sec": 38536,
+      "end_sec": 39227,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-19_S004",
+      "start_sec": 52341,
+      "end_sec": 53377,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-19_S005",
+      "start_sec": 54809,
+      "end_sec": 54809,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-19_S006",
+      "start_sec": 56384,
+      "end_sec": 56602,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-19_S007",
+      "start_sec": 63091,
+      "end_sec": 63091,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-19_S008",
+      "start_sec": 66903,
+      "end_sec": 67564,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-19_S009",
+      "start_sec": 69016,
+      "end_sec": 69276,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-19_S010",
+      "start_sec": 70300,
+      "end_sec": 71255,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-19_S011",
+      "start_sec": 73005,
+      "end_sec": 73993,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-19_S012",
+      "start_sec": 75179,
+      "end_sec": 75607,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-19_S013",
+      "start_sec": 76765,
+      "end_sec": 77560,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-19_S014",
+      "start_sec": 80240,
+      "end_sec": 81781,
+      "scene_type": "大面积晚点干扰"
+    }
+  ],
+  "2023-07-20": [
+    {
+      "scenario_id": "2023-07-20_S001",
+      "start_sec": 28623,
+      "end_sec": 28623,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-20_S002",
+      "start_sec": 34435,
+      "end_sec": 34435,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-20_S003",
+      "start_sec": 37506,
+      "end_sec": 37506,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-20_S004",
+      "start_sec": 38530,
+      "end_sec": 39182,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-20_S005",
+      "start_sec": 42229,
+      "end_sec": 42874,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-20_S006",
+      "start_sec": 45354,
+      "end_sec": 45601,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-20_S007",
+      "start_sec": 48776,
+      "end_sec": 49058,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-20_S008",
+      "start_sec": 52363,
+      "end_sec": 52363,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-20_S009",
+      "start_sec": 53399,
+      "end_sec": 53399,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-20_S010",
+      "start_sec": 55250,
+      "end_sec": 59904,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-20_S011",
+      "start_sec": 65564,
+      "end_sec": 72437,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-20_S012",
+      "start_sec": 73066,
+      "end_sec": 74840,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-20_S013",
+      "start_sec": 76122,
+      "end_sec": 78225,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-20_S014",
+      "start_sec": 80469,
+      "end_sec": 81327,
+      "scene_type": "单列车短时晚点"
+    }
+  ],
+  "2023-07-21": [
+    {
+      "scenario_id": "2023-07-21_S001",
+      "start_sec": 34386,
+      "end_sec": 34479,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-21_S002",
+      "start_sec": 35739,
+      "end_sec": 35739,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-21_S003",
+      "start_sec": 37032,
+      "end_sec": 38419,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-21_S004",
+      "start_sec": 48844,
+      "end_sec": 49260,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-21_S005",
+      "start_sec": 52398,
+      "end_sec": 52398,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-21_S006",
+      "start_sec": 56647,
+      "end_sec": 57666,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-21_S007",
+      "start_sec": 60543,
+      "end_sec": 60543,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-21_S008",
+      "start_sec": 61478,
+      "end_sec": 61478,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-21_S009",
+      "start_sec": 63368,
+      "end_sec": 63368,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-21_S010",
+      "start_sec": 65161,
+      "end_sec": 67878,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-21_S011",
+      "start_sec": 69627,
+      "end_sec": 70660,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-21_S012",
+      "start_sec": 71916,
+      "end_sec": 75185,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-21_S013",
+      "start_sec": 77875,
+      "end_sec": 78622,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-21_S014",
+      "start_sec": 80135,
+      "end_sec": 82018,
+      "scene_type": "大面积晚点干扰"
+    }
+  ],
+  "2023-07-22": [
+    {
+      "scenario_id": "2023-07-22_S001",
+      "start_sec": 31749,
+      "end_sec": 31749,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-22_S002",
+      "start_sec": 35869,
+      "end_sec": 36974,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-22_S003",
+      "start_sec": 38429,
+      "end_sec": 39181,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-22_S004",
+      "start_sec": 52399,
+      "end_sec": 53475,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-22_S005",
+      "start_sec": 59692,
+      "end_sec": 60442,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-22_S006",
+      "start_sec": 61467,
+      "end_sec": 61467,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-22_S007",
+      "start_sec": 63066,
+      "end_sec": 63066,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-22_S008",
+      "start_sec": 66843,
+      "end_sec": 66843,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-22_S009",
+      "start_sec": 67841,
+      "end_sec": 69361,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-22_S010",
+      "start_sec": 70314,
+      "end_sec": 75095,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-22_S011",
+      "start_sec": 76949,
+      "end_sec": 76949,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-22_S012",
+      "start_sec": 78073,
+      "end_sec": 78285,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-22_S013",
+      "start_sec": 80525,
+      "end_sec": 81267,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-22_S014",
+      "start_sec": 83901,
+      "end_sec": 83901,
+      "scene_type": "单列车短时晚点"
+    }
+  ],
+  "2023-07-23": [
+    {
+      "scenario_id": "2023-07-23_S001",
+      "start_sec": 34447,
+      "end_sec": 34447,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-23_S002",
+      "start_sec": 35749,
+      "end_sec": 35749,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-23_S003",
+      "start_sec": 37566,
+      "end_sec": 39274,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-23_S004",
+      "start_sec": 41000,
+      "end_sec": 42082,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-23_S005",
+      "start_sec": 43742,
+      "end_sec": 45028,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-23_S006",
+      "start_sec": 46128,
+      "end_sec": 46128,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-23_S007",
+      "start_sec": 48762,
+      "end_sec": 48964,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-23_S008",
+      "start_sec": 52567,
+      "end_sec": 52567,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-23_S009",
+      "start_sec": 59969,
+      "end_sec": 59969,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-23_S010",
+      "start_sec": 66860,
+      "end_sec": 69088,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-23_S011",
+      "start_sec": 70195,
+      "end_sec": 71539,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-23_S012",
+      "start_sec": 73689,
+      "end_sec": 74812,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-23_S013",
+      "start_sec": 76178,
+      "end_sec": 76178,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-23_S014",
+      "start_sec": 77172,
+      "end_sec": 79191,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-23_S015",
+      "start_sec": 80649,
+      "end_sec": 81344,
+      "scene_type": "混合型晚点场景"
+    }
+  ],
+  "2023-07-24": [
+    {
+      "scenario_id": "2023-07-24_S001",
+      "start_sec": 31753,
+      "end_sec": 31753,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-24_S002",
+      "start_sec": 33007,
+      "end_sec": 33007,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-24_S003",
+      "start_sec": 34478,
+      "end_sec": 34716,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-24_S004",
+      "start_sec": 37605,
+      "end_sec": 39223,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-24_S005",
+      "start_sec": 45010,
+      "end_sec": 45010,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-24_S006",
+      "start_sec": 49217,
+      "end_sec": 49581,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-24_S007",
+      "start_sec": 56635,
+      "end_sec": 57210,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-24_S008",
+      "start_sec": 60132,
+      "end_sec": 60132,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-24_S009",
+      "start_sec": 66877,
+      "end_sec": 67246,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-24_S010",
+      "start_sec": 69097,
+      "end_sec": 69097,
+      "scene_type": "单列车短时晚点"
+    },
+    {
+      "scenario_id": "2023-07-24_S011",
+      "start_sec": 70704,
+      "end_sec": 73553,
+      "scene_type": "大面积晚点干扰"
+    },
+    {
+      "scenario_id": "2023-07-24_S012",
+      "start_sec": 77226,
+      "end_sec": 78312,
+      "scene_type": "混合型晚点场景"
+    },
+    {
+      "scenario_id": "2023-07-24_S013",
+      "start_sec": 80392,
+      "end_sec": 81603,
+      "scene_type": "混合型晚点场景"
+    }
+  ]
+}
